@@ -71,7 +71,7 @@ public final class StratifiedSampleBatchOp extends BatchOperator<StratifiedSampl
     public StratifiedSampleBatchOp linkFrom(BatchOperator<?>... inputs) {
         BatchOperator<?> in = checkAndGetFirst(inputs);
 
-        // compute index of group key
+        // compute index of group column
         int index = TableUtil.findColIndexWithAssertAndHint(in.getColNames(), getGroupCol());
         Double ratio = getRatio();
         String ratios = getRatios();

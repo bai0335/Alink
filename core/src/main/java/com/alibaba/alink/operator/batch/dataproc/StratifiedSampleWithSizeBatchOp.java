@@ -35,7 +35,7 @@ public final class StratifiedSampleWithSizeBatchOp extends BatchOperator<Stratif
     @Override
     public StratifiedSampleWithSizeBatchOp linkFrom(BatchOperator<?>... inputs) {
         BatchOperator<?> in = checkAndGetFirst(inputs);
-        // compute index of group key
+        // compute index of group column
         int index = TableUtil.findColIndexWithAssertAndHint(in.getColNames(), getGroupCol());
 
         Integer size = getSize();

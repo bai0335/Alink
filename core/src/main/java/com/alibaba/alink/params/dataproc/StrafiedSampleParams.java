@@ -4,11 +4,6 @@ import com.alibaba.alink.params.shared.colname.HasGroupCol;
 import com.alibaba.alink.params.validators.RangeValidator;
 import org.apache.flink.ml.api.misc.param.ParamInfo;
 import org.apache.flink.ml.api.misc.param.ParamInfoFactory;
-import org.apache.flink.ml.api.misc.param.ParamValidator;
-import org.apache.flink.ml.api.misc.param.WithParams;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public interface StrafiedSampleParams<T> extends
         HasGroupCol<T>,

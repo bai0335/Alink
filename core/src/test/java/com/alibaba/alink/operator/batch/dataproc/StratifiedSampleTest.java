@@ -3,7 +3,6 @@ package com.alibaba.alink.operator.batch.dataproc;
 import com.alibaba.alink.operator.batch.BatchOperator;
 import com.alibaba.alink.operator.batch.source.MemSourceBatchOp;
 import com.google.common.base.Joiner;
-import com.google.gson.Gson;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.types.Row;
 import org.junit.Assert;

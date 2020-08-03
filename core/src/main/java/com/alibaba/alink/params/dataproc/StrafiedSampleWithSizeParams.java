@@ -2,11 +2,8 @@ package com.alibaba.alink.params.dataproc;
 
 import com.alibaba.alink.params.shared.colname.HasGroupCol;
 import com.alibaba.alink.params.validators.RangeValidator;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.ml.api.misc.param.ParamInfo;
 import org.apache.flink.ml.api.misc.param.ParamInfoFactory;
-import org.apache.flink.ml.api.misc.param.ParamValidator;
-import org.apache.flink.ml.api.misc.param.WithParams;
 
 public interface StrafiedSampleWithSizeParams<T> extends
     HashWithReplacementParams<T>,
